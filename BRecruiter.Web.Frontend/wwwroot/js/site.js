@@ -153,6 +153,11 @@ var Search = function () {
                     $('#message-success').fadeIn("slow");
                     $('#message-success').fadeOut(5000);
 
+                    $('.content').fadeOut("slow", function () {
+                        $(this).html(data);
+                        $(this).fadeIn("slow");
+                    });
+                    $('.selected').removeClass('selected');
                 }
             });
 
