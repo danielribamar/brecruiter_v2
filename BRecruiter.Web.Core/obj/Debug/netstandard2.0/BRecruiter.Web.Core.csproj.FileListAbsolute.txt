@@ -1,0 +1,9 @@
+C:\Users\Daniel\Desktop\BRecruiter\BRecruiter.Web.Core\bin\Debug\netstandard2.0\BRecruiter.Web.Core.deps.json
+C:\Users\Daniel\Desktop\BRecruiter\BRecruiter.Web.Core\bin\Debug\netstandard2.0\BRecruiter.Web.Core.dll
+C:\Users\Daniel\Desktop\BRecruiter\BRecruiter.Web.Core\bin\Debug\netstandard2.0\BRecruiter.Web.Core.pdb
+C:\Users\Daniel\Desktop\BRecruiter\BRecruiter.Web.Core\obj\Debug\netstandard2.0\BRecruiter.Web.Core.csprojResolveAssemblyReference.cache
+C:\Users\Daniel\Desktop\BRecruiter\BRecruiter.Web.Core\obj\Debug\netstandard2.0\BRecruiter.Web.Core.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Desktop\BRecruiter\BRecruiter.Web.Core\obj\Debug\netstandard2.0\BRecruiter.Web.Core.AssemblyInfoInputs.cache
+C:\Users\Daniel\Desktop\BRecruiter\BRecruiter.Web.Core\obj\Debug\netstandard2.0\BRecruiter.Web.Core.AssemblyInfo.cs
+C:\Users\Daniel\Desktop\BRecruiter\BRecruiter.Web.Core\obj\Debug\netstandard2.0\BRecruiter.Web.Core.dll
+C:\Users\Daniel\Desktop\BRecruiter\BRecruiter.Web.Core\obj\Debug\netstandard2.0\BRecruiter.Web.Core.pdb

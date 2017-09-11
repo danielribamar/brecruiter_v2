@@ -1,0 +1,13 @@
+C:\Users\Daniel\Desktop\BRecruiter\BRecruiter.Web.Frontend\bin\Debug\netcoreapp2.0\BRecruiter.Web.Frontend.deps.json
+C:\Users\Daniel\Desktop\BRecruiter\BRecruiter.Web.Frontend\bin\Debug\netcoreapp2.0\BRecruiter.Web.Frontend.runtimeconfig.json
+C:\Users\Daniel\Desktop\BRecruiter\BRecruiter.Web.Frontend\bin\Debug\netcoreapp2.0\BRecruiter.Web.Frontend.runtimeconfig.dev.json
+C:\Users\Daniel\Desktop\BRecruiter\BRecruiter.Web.Frontend\bin\Debug\netcoreapp2.0\BRecruiter.Web.Frontend.dll
+C:\Users\Daniel\Desktop\BRecruiter\BRecruiter.Web.Frontend\bin\Debug\netcoreapp2.0\BRecruiter.Web.Frontend.pdb
+C:\Users\Daniel\Desktop\BRecruiter\BRecruiter.Web.Frontend\obj\Debug\netcoreapp2.0\BRecruiter.Web.Frontend.csprojResolveAssemblyReference.cache
+C:\Users\Daniel\Desktop\BRecruiter\BRecruiter.Web.Frontend\obj\Debug\netcoreapp2.0\BRecruiter.Web.Frontend.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Desktop\BRecruiter\BRecruiter.Web.Frontend\obj\Debug\netcoreapp2.0\BRecruiter.Web.Frontend.AssemblyInfoInputs.cache
+C:\Users\Daniel\Desktop\BRecruiter\BRecruiter.Web.Frontend\obj\Debug\netcoreapp2.0\BRecruiter.Web.Frontend.AssemblyInfo.cs
+C:\Users\Daniel\Desktop\BRecruiter\BRecruiter.Web.Frontend\obj\Debug\netcoreapp2.0\BRecruiter.Web.Frontend.dll
+C:\Users\Daniel\Desktop\BRecruiter\BRecruiter.Web.Frontend\obj\Debug\netcoreapp2.0\BRecruiter.Web.Frontend.pdb
+C:\Users\Daniel\Desktop\BRecruiter\BRecruiter.Web.Frontend\bin\Debug\netcoreapp2.0\BRecruiter.Web.Core.dll
+C:\Users\Daniel\Desktop\BRecruiter\BRecruiter.Web.Frontend\bin\Debug\netcoreapp2.0\BRecruiter.Web.Core.pdb

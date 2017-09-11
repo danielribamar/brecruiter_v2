@@ -1,0 +1,41 @@
+﻿@model List<BRecruiter.Web.Core.Models.Candidate>
+<h1>Candidatos</h1>
+<p>The .active class applies the hover color to a particular row or cell:</p>
+<a class="render-details" data-ctrl="Candidates" data-action="Create">Create new candidate</a>
+<table id="table-candidates" class="table">
+    <thead>
+        <tr>
+            <th>Email</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Wage</th>
+            <th>Experience</th>
+            <th>Available</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var candidate in Model)
+        {
+            <tr id="@candidate.Id">
+                <td hidden id="@candidate.Id-id">@candidate.Id</td>
+                <td id="@candidate.Id-email"><a href="mailto:@candidate.Email">@candidate.Email</a></td>
+                <td id="@candidate.Id-firstname">@candidate.FirstName</td>
+                <td id="@candidate.Id-lastname">@candidate.LastName</td>
+                <td id="@candidate.Id-wage">@candidate.Wage</td>
+                <td id="@candidate.Id-experience">@candidate.Experience anos</td>
+                <td id="@candidate.Id-available">@candidate.Available</td>
+                <td>
+                    <span class="render-details action " data-ctrl="Candidates" data-action="Detail" data-id="@candidate.Id">View | </span>
+                    <span class="render-details action " data-ctrl="Candidates" data-action="Edit" data-id="@candidate.Id">Edit | </span>
+                    <span class="action">Delete</span>
+                </td>
+            </tr>
+
+        }
+    </tbody>
+</table>
+
+<script>
+    Details.init();
+</script>

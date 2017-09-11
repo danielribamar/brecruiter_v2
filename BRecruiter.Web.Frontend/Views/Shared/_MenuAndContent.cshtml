@@ -1,0 +1,40 @@
+﻿@{
+    Layout = "_Layout";
+}
+<div class="row">
+    <div class="col-md-4 menu">
+        <a asp-controller="Home" asp-action="Index"><h2>BRecruiter</h2></a>
+        <hr />
+        <h4 class="render-partial" data-ctrl="Dashboard" data-action="Index">Dashboard</h4>
+        <h4 class="render-partial" data-ctrl="Candidates" data-action="Index">Candidatos</h4>
+        <a href="#search">
+            <h4>
+                <i id="fa-search" class="fa fa-search"></i>
+            </h4>
+        </a>
+
+        <div class="alert alert-success alert-dismissable" id="message-success" hidden>
+            <strong>Successo!</strong>
+            <span id="message-success-body">Indicates a successful or positive action.</span>
+        </div>
+        <div class="alert alert-danger alert-dismissable" id="message-error" hidden>
+            <strong>Erro!</strong>
+            <span id="message-error-body">Indicates a successful or positive action.</span>
+        </div>
+    </div>
+    <div class="col-md-offset-4 col-md-8">
+        <div class="row">
+            <div class="col-md-12 content">
+                @RenderBody()
+            </div>
+            <div class="col-md-12 details">
+
+            </div>
+        </div>
+    </div>
+</div>
+@Html.Partial("/Views/Partials/SearchModal.cshtml")
+
+
+
+

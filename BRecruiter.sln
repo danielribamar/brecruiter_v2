@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BRecruiter.Web.Frontend", "BRecruiter.Web.Frontend\BRecruiter.Web.Frontend.csproj", "{EDDEB2D4-2CE5-4358-9A32-6CEA21441C5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BRecruiter.Web.Core", "BRecruiter.Web.Core\BRecruiter.Web.Core.csproj", "{F86D2F21-FFCC-4191-A51B-C3701B653D28}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDDEB2D4-2CE5-4358-9A32-6CEA21441C5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDDEB2D4-2CE5-4358-9A32-6CEA21441C5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDDEB2D4-2CE5-4358-9A32-6CEA21441C5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDDEB2D4-2CE5-4358-9A32-6CEA21441C5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F86D2F21-FFCC-4191-A51B-C3701B653D28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F86D2F21-FFCC-4191-A51B-C3701B653D28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F86D2F21-FFCC-4191-A51B-C3701B653D28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F86D2F21-FFCC-4191-A51B-C3701B653D28}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1ACED0E6-4F4D-4C14-95C7-619146F256E9}
+	EndGlobalSection
+EndGlobal
