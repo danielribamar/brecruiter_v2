@@ -2,38 +2,40 @@
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace BRecruiter.Web.Frontend.Controllers
 {
     public class CandidatesController : Controller
     {
+        private int PageSize = 5;
+
         [HttpGet]
-        public IActionResult Index()
+        public IActionResult Index([FromQuery]int page = 1)
         {
-            var candidates = new List<Candidate>()
+            var viewModel = new CandidatesViewModel();
+
+            viewModel.Candidates = new List<Candidate>();
+            for (int index = 0; index < 100; index++)
             {
-                new Candidate
+                viewModel.Candidates.Add(new Candidate
                 {
-                    Id=1,
-                    FirstName="Daniel",
-                    LastName = "Martins",
-                    Email="daniel.martins@tribe.pt",
+                    Id = index,
+                    FirstName = Guid.NewGuid().ToString(),
+                    LastName = "Surname",
+                    Email = $"daniel.{Guid.NewGuid().ToString()}@tribe.pt",
                     Available = false,
-                    Experience=4,
-                    Wage = 5000
-                },
-                new Candidate
-                {
-                    Id=2,
-                    FirstName ="Bárbara",
-                    LastName = "Mota",
-                    Email="barbaralinaresmota@gmail.com",
-                    Available = false,
-                    Experience = 8,
-                    Wage = 500
-                }
-            };
-            return PartialView(candidates);
+                    Experience = index,
+                    Wage = index * 1000
+                });
+            }
+
+            viewModel.Pagination = new PaginationModel();
+            viewModel.Pagination.Page = page;
+            viewModel.Pagination.NumberOfRecords = viewModel.Candidates.Count;
+            viewModel.Pagination.NumberOfPages = (viewModel.Pagination.NumberOfRecords + PageSize - 1) / PageSize;
+            viewModel.Candidates = viewModel.Candidates.Skip(PageSize * (page - 1)).Take(PageSize).ToList();
+            return PartialView(viewModel);
         }
 
         [HttpGet]
@@ -81,9 +83,10 @@ namespace BRecruiter.Web.Frontend.Controllers
         }
 
         [HttpGet]
-        public IActionResult Search([FromQuery]string query)
+        public IActionResult Search([FromQuery]string query, int page = 1)
         {
-            var candidates = new List<Candidate>()
+            var viewModel = new CandidatesViewModel();
+            viewModel.Candidates = new List<Candidate>()
             {
                 new Candidate
                 {
@@ -97,7 +100,13 @@ namespace BRecruiter.Web.Frontend.Controllers
                 }
             };
 
-            return PartialView("Index", candidates);
+            viewModel.Pagination = new PaginationModel();
+            viewModel.Pagination.Page = page;
+            viewModel.Pagination.NumberOfRecords = viewModel.Candidates.Count;
+            viewModel.Pagination.NumberOfPages = (viewModel.Pagination.NumberOfRecords + PageSize - 1) / PageSize;
+            viewModel.Candidates = viewModel.Candidates.Skip(PageSize * (page - 1)).Take(PageSize).ToList();
+
+            return PartialView("Index", viewModel);
         }
     }
 }

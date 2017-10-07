@@ -1,4 +1,4 @@
-﻿@model List<BRecruiter.Web.Core.Models.Candidate>
+﻿@model BRecruiter.Web.Core.Models.CandidatesViewModel
 <h1>Candidatos</h1>
 <p>The .active class applies the hover color to a particular row or cell:</p>
 <a class="render-details" data-ctrl="Candidates" data-action="Create">Create new candidate</a>
@@ -15,7 +15,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var candidate in Model)
+        @foreach (var candidate in Model.Candidates)
         {
             <tr id="@candidate.Id">
                 <td hidden id="@candidate.Id-id">@candidate.Id</td>
@@ -34,7 +34,16 @@
 
         }
     </tbody>
+
 </table>
+<ul class="pagination">
+    @for (int index = 1; index < Model.Pagination.NumberOfPages; index++)
+    {
+        <li class="@(index==Model.Pagination.Page?"active":"")">
+            <span id="page_@index" data-page="@index" class="page">@index</span>
+        </li>
+    }
+</ul>
 
 <script>
     Details.init();

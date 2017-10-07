@@ -36,6 +36,25 @@ var Details = function () {
     var handleRender = function () {
         console.log('_handling render');
 
+        $('.page').click(function (event, element) {
+
+            var btn = $(this);
+
+            var page = btn.data("page");
+            $.ajax({
+                url: '/candidates/index?page=' + page,
+                context: document.body
+            }).done(function (data) {
+                $('.content').fadeOut("slow", function () {
+                    console.log(data);
+                    $(this).html(data);
+                    $(this).fadeIn("slow");
+                });
+                $("#table-candidates tbody tr").removeClass('active');
+
+            });
+        });
+
         $('.render-details').click(function (event, element) {
 
             var btn = $(this);
@@ -115,8 +134,9 @@ var Edit = function () {
                     $('#message-success-body').html('O candidato ' + data.firstName + ' foi editado com sucesso.')
                     $('#message-success').fadeIn("slow");
                     $('#message-success').fadeOut(5000);
-
                 }
+
+                document.getElementById("details").scrollIntoView();
             });
 
 
